@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Envs
+src/cv-vision/cv-vision-env/
+
+*.zip
+
+# Dataset stuff
+src/cv-vision/dataset/merged/
+src/cv-vision/dataset/raw/
+src/cv-vision/dataset/extracted/
