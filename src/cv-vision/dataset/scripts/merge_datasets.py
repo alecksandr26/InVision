@@ -186,9 +186,11 @@ def build_yaml() -> None:
     with open(out, "w") as f:
         yaml.dump(
             {
-                "train": str(MERGED_DIR / "train" / "images"),
-                "val":   str(MERGED_DIR / "valid" / "images"),
-                "test":  str(MERGED_DIR / "test"  / "images"),
+                # Path for unzipping the dataset within the Colab environment
+                "path": "/content/invision-dataset",  
+                "train": "train/images",
+                "val": "valid/images",
+                "test": "test/images",
                 "nc":    NUM_CLASSES,
                 "names": UNIFIED_CLASSES,
             },
