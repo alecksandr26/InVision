@@ -117,3 +117,34 @@ The dashboard below provides a deep dive into the 25,000+ images currently in th
     * *Strategy:* We will enable **Translation Augmentation** (0.1) during training to force the model to look at the periphery of the frame.
 
 ---
+
+### 🧠 Dataset Class Remapping & Ontology
+
+To optimize **Project InVision** for real-time obstacle avoidance and navigation, we implement a **Class Remapping Protocol**. The original datasets (SafeWalkBD, PedestrianObstacleDetection, and Vision) contain highly granular labels that are computationally redundant for navigation logic. We consolidate these into **10 Functional Categories**.
+
+#### The Strategy: Semantic Aggregation
+Instead of the model trying to distinguish between a "car," "bus," and "tricycle," it identifies them all as a **`vehicle`**. This reduces the "cognitive load" on the model and focuses on the functional impact the object has on the pedestrian’s path.
+
+
+
+#### Functional Mapping Breakdown
+
+| Consolidated Class | Included Sub-Classes (Examples) | Navigation Logic |
+| :--- | :--- | :--- |
+| **`person`** | pedestrian, animal, person | Dynamic moving obstacle; require wide berth. |
+| **`vehicle`** | car, bus, truck, bicycle, train | High-kinetic energy hazard; priority avoidance. |
+| **`obstacle`** | roadblock, trash bin, chair, hydrant | Static ground-level blockage; route around. |
+| **`pothole`** | drain, puddle, bad road | Negative space hazard; requires step-over or bypass. |
+| **`pole`** | utility pole, sign pole | Vertical narrow obstacle; collision risk at head/shoulder level. |
+| **`stairs`** | stair, over-bridge | Elevation change; transition from walking to climbing mode. |
+| **`crosswalk`** | zebra cross, tactile paving, sidewalk | Safe zone / Navigational guide markers. |
+| **`door`** | open_door, close_door | Access point; transition from outdoor to indoor. |
+| **`traffic_light`**| stop sign, street sign, traffic signal | Rules of Engagement; determines "Go/No-Go" status. |
+| **`edge_hazard`** | fence, railing | Boundary marker; indicates non-navigable drop-offs or walls. |
+
+
+
+#### 3. Why This Improves Performance
+* **Increased Training Stability:** By grouping "animal" into "person," we provide the model with more training examples for a single feature set, leading to the high **0.79 Precision** we see in our results.
+* **Simplified Logic:** The navigation script doesn't need 40 `if` statements. It only needs to know if the path is blocked by a `vehicle` (high risk) or a `pothole` (ground risk).
+* **Cross-Dataset Compatibility:** This map acts as a "Universal Translator," allowing us to combine three different datasets into one master training pipeline without label conflicts.
