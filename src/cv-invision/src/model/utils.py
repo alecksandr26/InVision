@@ -1,0 +1,57 @@
+import gdown
+from .const import INVISION_DETECTION_MODEL, INVISION_DETECTION_MODEL_CURRENT_VERSION
+
+from ..utils.log import get_logger
+
+logger = get_logger(__name__)
+
+
+def download_detection_model(version: str = INVISION_DETECTION_MODEL_CURRENT_VERSION, dest_path: str = None):
+    """
+    Downloads the Invision Detection Model from Google Drive using gdown.
+
+    Args:
+        version  : Model version to download (e.g. "v1.0.0"). Defaults to current version.
+        dest_path: Local path to save the model. Defaults to model/weights/<filename>.
+    """
+
+    model = INVISION_DETECTION_MODEL[version]
+    url   = model["url"]
+    dest  = str(dest_path or model["filename"])
+
+    logger.info(f"Downloading Invision Detection Model {version} ({model['architecture']} | {model['train_run']})...")
+
+    gdown.download(url, dest, fuzzy=True)  # fuzzy=True handles all GDrive URL formats + confirmation
+
+    logger.info(f"✅ Detection model {version} saved to '{dest}'")
+
+
+def print_device_info(device: str):
+    import torch
+    
+    logger.info(f"⚙️  Torch: {torch.__version__}")
+    logger.info(f"⚙️  CUDA available: {torch.cuda.is_available()}")
+    
+    if torch.cuda.is_available():
+        for i in range(torch.cuda.device_count()):
+            name   = torch.cuda.get_device_name(i)
+            memory = torch.cuda.get_device_properties(i).total_memory / 1024**3
+            logger.info(f"⚙️  GPU {i}: {name} ({memory:.1f} GB)")
+    else:
+        logger.info("⚙️  No GPU detected — running on CPU")
+
+    logger.info(f"⚙️  Selected device: {device.upper()}")
+
+
+    
+
+if __name__ == "__main__":
+    # Download current version
+    download_detection_model()
+
+    # Or download a specific version explicitly:
+    # download_detection_model(version="v1.0.0")
+    # download_detection_model(version="v1.0.0", dest_path="models/invision_v1.pt")
+
+
+    

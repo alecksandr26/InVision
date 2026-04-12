@@ -218,3 +218,11 @@ __marimo__/
 
 # Model Stuff
 **/model/weights/
+
+
+# Data examples
+**/data-examples/
+
+
+# Logs
+**/logs/

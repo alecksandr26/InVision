@@ -18,7 +18,9 @@ cryptography==46.0.5
 cuda-bindings==12.9.4
 cuda-pathfinder==1.5.0
 cuda-toolkit==13.0.2
+-e git+ssh://git@github.com/alecksandr26/InVision.git@60a09420a32861de97d068b57010a885c242a33f#egg=cv_invision&subdirectory=src/cv-invision
 cycler==0.12.1
+deep-sort-realtime==1.3.2
 expecttest==0.3.0
 filelock==3.25.2
 flatbuffers==25.12.19
@@ -56,8 +58,9 @@ mpmath==1.3.0
 namex==0.1.0
 networkx==3.6.1
 ninja==1.13.0
-numpy==2.4.4
+numpy==1.26.4
 oauthlib==3.3.1
+opencv-contrib-python==4.13.0.92
 opencv-python==4.13.0.92
 opt_einsum==3.4.0
 optree==0.19.0
@@ -100,6 +103,7 @@ tensorflow-estimator==2.13.0
 tensorflow-io-gcs-filesystem==0.37.1
 termcolor==3.3.0
 torch @ file:///home/aleck/Downloads/torch/pytorch-release-2.10-git/dist/torch-2.10.0a0%2Bgit911aa98-cp311-cp311-linux_x86_64.whl#sha256=6f598ee5d41c7af4041362b7c0b2ac39ca8c6f652b4c3d6c4f32ed90679e4df7
+torchgen==0.0.1
 torchvision @ file:///home/aleck/Downloads/torch/vision-release-0.25-git/dist/torchvision-0.25.0%2B8ac84ee-cp311-cp311-linux_x86_64.whl#sha256=13968fee3ba26cf371c1d5b7e9192dcb2df2fd18eb68c56f57824714ec50590b
 tqdm==4.67.3
 triton==3.6.0
