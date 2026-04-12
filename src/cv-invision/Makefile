@@ -3,8 +3,7 @@ PY=python
 PARENT_PACKAGE=src
 
 download-samples:
-	$(PY) -m $(PARENT_PACKAGE).utils.download_samples
-\
+	$(PY) -m $(PARENT_PACKAGE).utils.download_samples \
 		$(if $(url), --url $(url)) \
 		$(if $(output), --output $(output))
 
