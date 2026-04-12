@@ -207,12 +207,14 @@ marimo/_lsp/
 __marimo__/
 
 # Envs
-src/cv-invision/cv-invision-env/
+**/cv-invision-env/
 
 *.zip
 
 # Dataset stuff
-src/cv-invision/dataset/merged/
-src/cv-invision/dataset/raw/
-src/cv-invision/dataset/extracted/
-src/cv-invision/model/weights/
+**/dataset/merged/
+**/dataset/raw/
+**/dataset/extracted/
+
+# Model Stuff
+**/model/weights/
