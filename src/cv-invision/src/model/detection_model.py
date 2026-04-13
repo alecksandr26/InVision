@@ -26,7 +26,7 @@ def load_detection_model_test(version: str = INVISION_DETECTION_MODEL_CURRENT_VE
     
     model_info = INVISION_DETECTION_MODEL[version]
     weights    = str(model_info["filename"])
-    device     = "cuda" if torch.cuda.is_available() else "cpu"
+    device     = "cuda" if (torch.cuda.is_available()) else "cpu"
 
     logger.info(f"🧪 Loading Detection Model {version} in TEST mode ({model_info['architecture']} | {model_info['train_run']})...")
     print_device_info(device)
@@ -72,24 +72,15 @@ def load_detection_model_prod(version: str = INVISION_DETECTION_MODEL_CURRENT_VE
             logger.warning(f"⚠️  Quantized TFLite not found at {quantized_path}. Falling back to standard weights.")
             model = YOLO(str(weights_path))
 
-        # Define specialized predict for CPU
-        def predict(source, **kwargs):
-            return model.predict(
-                source  = source,
-                conf    = DETECTION_CONF_PROD,
-                iou     = DETECTION_IOU_PROD,
-                verbose = kwargs.get("verbose", False),
-            )
-
         logger.info(f"✅ Prod model loaded on CPU (Optimized with TFLite)")
-        return predict
-
-    # ── GPU Path (Your RX 5500 XT) ────────────────────────────────
-    logger.info(f"📦 Loading standard .pt weights from '{weights_path}'...")
-    model = YOLO(str(weights_path))
+    else:
+        # ── GPU Path (Your RX 5500 XT) ────────────────────────────────
+        logger.info(f"📦 Loading standard .pt weights from '{weights_path}'...")
+        model = YOLO(str(weights_path))
+        model.to(device)
+        
     model.overrides["conf"] = DETECTION_CONF_PROD
     model.overrides["iou"]  = DETECTION_IOU_PROD
-    model.to(device)
 
     # Warmup
     logger.info("🔥 Warming up model...")
