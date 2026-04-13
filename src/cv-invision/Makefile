@@ -31,3 +31,8 @@ benchmark:
 		$(if $(warmup), --warmup $(warmup), --warmup 3)
 
 
+run-pipeline:
+	$(PY) -m src.pipeline.test.pipeline \
+		$(if $(input), --input $(input)) \
+		$(if $(output), --output $(output)) \
+		$(if $(no_show), --no-show)

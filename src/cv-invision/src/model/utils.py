@@ -1,4 +1,5 @@
 import gdown
+from pathlib import Path
 from .const import INVISION_DETECTION_MODEL, INVISION_DETECTION_MODEL_CURRENT_VERSION
 
 from ..utils.log import get_logger
@@ -21,7 +22,7 @@ def download_detection_model(version: str = INVISION_DETECTION_MODEL_CURRENT_VER
 
     logger.info(f"Downloading Invision Detection Model {version} ({model['architecture']} | {model['train_run']})...")
 
-    gdown.download(url, dest, fuzzy=True)  # fuzzy=True handles all GDrive URL formats + confirmation
+    gdown.download(url, dest)  # fuzzy=True handles all GDrive URL formats + confirmation
 
     logger.info(f"✅ Detection model {version} saved to '{dest}'")
 
@@ -43,11 +44,41 @@ def print_device_info(device: str):
     logger.info(f"⚙️  Selected device: {device.upper()}")
 
 
+def download_quantized_model(version: str = INVISION_DETECTION_MODEL_CURRENT_VERSION, dest_path: str = None):
+    """
+    Downloads the Quantized TFLite Invision Detection Model.
+    Ensures the file is saved with a .tflite extension to prevent loading errors.
+    """
+    model = INVISION_DETECTION_MODEL[version]
     
+    url = model.get("quantize_url")
+    if not url:
+        logger.error(f"❌ No quantized model URL found for version {version}")
+        return
 
+    # Use the specific quantized_filename from constants if available
+    if dest_path:
+        dest = Path(dest_path)
+    elif "quantized_filename" in model:
+        dest = Path(model["quantized_filename"])
+    else:
+        # Fallback logic: force .tflite extension
+        original_path = Path(model["filename"])
+        dest = original_path.with_name(f"{original_path.stem}_quantized.tflite")
+
+    logger.info(f"Downloading Quantized Invision Model {version} to {dest}...")
+    
+    # Download the file
+    gdown.download(url, str(dest))
+    
+    logger.info(f"✅ Quantized TFLite model {version} saved to '{dest}'")
+
+
+    
 if __name__ == "__main__":
     # Download current version
     download_detection_model()
+    download_quantized_model()
 
     # Or download a specific version explicitly:
     # download_detection_model(version="v1.0.0")

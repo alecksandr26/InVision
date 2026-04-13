@@ -300,7 +300,7 @@ def main():
 
     logger.info("🚀 Starting InVision video inference pipeline...")
 
-    model = load_detection_model_prod()
+    model = load_detection_model_test()
     tracker = build_tracker()
 
     run_video_inference(

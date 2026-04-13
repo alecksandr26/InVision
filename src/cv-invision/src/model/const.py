@@ -32,7 +32,9 @@ INVISION_DETECTION_MODEL = {
         "dataset":      "invision-dataset-v1",
         "description":  "First trained model from our custom dataset using YOLOv5n",
         "url":          "https://drive.google.com/file/d/1BUs5CwDfT1d4B3TFK3HByq1Y2n9UPblM/view?usp=drive_link",
+        "quantize_url": "https://drive.google.com/file/d/1RO6Y7Mc3hueuaNVsPVoVLT3EIGmFh4es/view?usp=drive_link",
         "filename":     WEIGHTS_DIR / "invision_detection_v1.pt",
+        "quantized_filename": WEIGHTS_DIR / "invision_detection_v1_quantized.tflite",
     },
 
     # "v2.0.0": {
