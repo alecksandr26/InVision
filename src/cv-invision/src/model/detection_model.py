@@ -2,8 +2,10 @@ from .const import DETECTION_CONF_TEST, DETECTION_IOU_TEST, DETECTION_CONF_PROD,
     INVISION_DETECTION_MODEL_CURRENT_VERSION, INVISION_DETECTION_MODEL
 
 from .utils import print_device_info
-from ..utils.log import get_logger
 
+from .inference_model import TFLiteInferenceModel
+
+from ..utils.log import get_logger
 logger = get_logger(__name__)
 
 
@@ -63,24 +65,33 @@ def load_detection_model_prod(version: str = INVISION_DETECTION_MODEL_CURRENT_VE
     logger.info(f"🚀 Loading Detection Model {version} in PROD mode...")
 
     # ── CPU/Edge Optimization (Raspberry Pi Path) ──────────────────
-    if device == "cpu":
+    if device == "cpu" or True:
         if Path(quantized_path).exists():
             logger.info(f"📦 Found pre-downloaded quantized TFLite model: {quantized_path}")
             # We don't use torch.load here because it's a TFLite file!
-            model = YOLO(str(quantized_path), task="detect")
+            # model = YOLO(str(quantized_path), task="detect")
+            model = TFLiteInferenceModel(
+                str(quantized_path),
+                num_threads=4,
+                conf_thres = DETECTION_CONF_PROD,
+                iou_thres = DETECTION_IOU_PROD,
+            )
         else:
             logger.warning(f"⚠️  Quantized TFLite not found at {quantized_path}. Falling back to standard weights.")
             model = YOLO(str(weights_path))
+            model.overrides["conf"] = DETECTION_CONF_PROD
+            model.overrides["iou"]  = DETECTION_IOU_PROD
+            model.to(device)
 
         logger.info(f"✅ Prod model loaded on CPU (Optimized with TFLite)")
     else:
         # ── GPU Path (Your RX 5500 XT) ────────────────────────────────
         logger.info(f"📦 Loading standard .pt weights from '{weights_path}'...")
         model = YOLO(str(weights_path))
+        model.overrides["conf"] = DETECTION_CONF_PROD
+        model.overrides["iou"]  = DETECTION_IOU_PROD
         model.to(device)
         
-    model.overrides["conf"] = DETECTION_CONF_PROD
-    model.overrides["iou"]  = DETECTION_IOU_PROD
 
     # Warmup
     logger.info("🔥 Warming up model...")

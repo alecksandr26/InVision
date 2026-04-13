@@ -1,6 +1,12 @@
 import os
 os.environ["QT_QPA_PLATFORM"] = "xcb"
 
+# Force TFLite to use XNNPACK for all compatible ops
+os.environ["TFLITE_XNNPACK_DELEGATE_FLAGS"] = "1" 
+# Ensure it uses all 4 cores of your Pi 5
+os.environ["TF_NUM_INTRAOP_THREADS"] = "4"
+os.environ["TF_NUM_INTEROP_THREADS"] = "4"
+
 import cv2
 import argparse
 import numpy as np
@@ -300,7 +306,7 @@ def main():
 
     logger.info("🚀 Starting InVision video inference pipeline...")
 
-    model = load_detection_model_test()
+    model = load_detection_model_prod()
     tracker = build_tracker()
 
     run_video_inference(
