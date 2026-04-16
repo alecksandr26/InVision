@@ -1,0 +1,3701 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/uname"
+      - "/usr/share/pyenv/libexec/uname"
+      - "/usr/share/pyenv/plugins/python-build/bin/uname"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/uname"
+      - "/opt/rocm/bin/uname"
+      - "/home/aleck/.cargo/bin/uname"
+      - "/home/aleck/.local/bin/uname"
+      - "/home/aleck/.pyenv/shims/uname"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.19.11-arch1-1 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gmake"
+      - "/usr/share/pyenv/libexec/gmake"
+      - "/usr/share/pyenv/plugins/python-build/bin/gmake"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gmake"
+      - "/opt/rocm/bin/gmake"
+      - "/home/aleck/.cargo/bin/gmake"
+      - "/home/aleck/.local/bin/gmake"
+      - "/home/aleck/.pyenv/shims/gmake"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/opt/android-sdk/emulator/gmake"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gmake"
+      - "/opt/android-sdk/platform-tools/gmake"
+      - "/opt/android-sdk/tools/gmake"
+      - "/opt/android-sdk/tools/bin/gmake"
+      - "/usr/lib/jvm/default/bin/gmake"
+      - "/opt/rocm/hip/bin/gmake"
+      - "/usr/bin/site_perl/gmake"
+      - "/usr/bin/vendor_perl/gmake"
+      - "/usr/bin/core_perl/gmake"
+      - "/var/lib/snapd/snap/bin/gmake"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gmake"
+      - "/home/aleck/go/bin/gmake"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/make"
+      - "/usr/share/pyenv/libexec/make"
+      - "/usr/share/pyenv/plugins/python-build/bin/make"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/make"
+      - "/opt/rocm/bin/make"
+      - "/home/aleck/.cargo/bin/make"
+      - "/home/aleck/.local/bin/make"
+      - "/home/aleck/.pyenv/shims/make"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/make"
+      - "/usr/local/sbin/make"
+      - "/usr/local/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/cc"
+      - "/usr/share/pyenv/libexec/cc"
+      - "/usr/share/pyenv/plugins/python-build/bin/cc"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/cc"
+      - "/opt/rocm/bin/cc"
+      - "/home/aleck/.cargo/bin/cc"
+      - "/home/aleck/.local/bin/cc"
+      - "/home/aleck/.pyenv/shims/cc"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/cc"
+      - "/usr/local/sbin/cc"
+      - "/usr/local/bin/cc"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/"
+    found: "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/4.3.0/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/dlltool"
+      - "/usr/share/pyenv/libexec/dlltool"
+      - "/usr/share/pyenv/plugins/python-build/bin/dlltool"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/dlltool"
+      - "/opt/rocm/bin/dlltool"
+      - "/home/aleck/.cargo/bin/dlltool"
+      - "/home/aleck/.local/bin/dlltool"
+      - "/home/aleck/.pyenv/shims/dlltool"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/opt/android-sdk/emulator/dlltool"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/dlltool"
+      - "/opt/android-sdk/platform-tools/dlltool"
+      - "/opt/android-sdk/tools/dlltool"
+      - "/opt/android-sdk/tools/bin/dlltool"
+      - "/usr/lib/jvm/default/bin/dlltool"
+      - "/opt/rocm/hip/bin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+      - "/var/lib/snapd/snap/bin/dlltool"
+      - "/usr/lib/jvm/java-11-openjdk/bin/dlltool"
+      - "/home/aleck/go/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/tapi"
+      - "/usr/share/pyenv/libexec/tapi"
+      - "/usr/share/pyenv/plugins/python-build/bin/tapi"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/tapi"
+      - "/opt/rocm/bin/tapi"
+      - "/home/aleck/.cargo/bin/tapi"
+      - "/home/aleck/.local/bin/tapi"
+      - "/home/aleck/.pyenv/shims/tapi"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/opt/android-sdk/emulator/tapi"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/tapi"
+      - "/opt/android-sdk/platform-tools/tapi"
+      - "/opt/android-sdk/tools/tapi"
+      - "/opt/android-sdk/tools/bin/tapi"
+      - "/usr/lib/jvm/default/bin/tapi"
+      - "/opt/rocm/hip/bin/tapi"
+      - "/usr/bin/site_perl/tapi"
+      - "/usr/bin/vendor_perl/tapi"
+      - "/usr/bin/core_perl/tapi"
+      - "/var/lib/snapd/snap/bin/tapi"
+      - "/usr/lib/jvm/java-11-openjdk/bin/tapi"
+      - "/home/aleck/go/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-15.2"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ar-15.2"
+      - "/usr/share/pyenv/libexec/gcc-ar-15.2"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ar-15.2"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ar-15.2"
+      - "/opt/rocm/bin/gcc-ar-15.2"
+      - "/home/aleck/.cargo/bin/gcc-ar-15.2"
+      - "/home/aleck/.local/bin/gcc-ar-15.2"
+      - "/home/aleck/.pyenv/shims/gcc-ar-15.2"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ar-15.2"
+      - "/usr/local/sbin/gcc-ar-15.2"
+      - "/usr/local/bin/gcc-ar-15.2"
+      - "/opt/android-sdk/emulator/gcc-ar-15.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-15.2"
+      - "/opt/android-sdk/platform-tools/gcc-ar-15.2"
+      - "/opt/android-sdk/tools/gcc-ar-15.2"
+      - "/opt/android-sdk/tools/bin/gcc-ar-15.2"
+      - "/usr/lib/jvm/default/bin/gcc-ar-15.2"
+      - "/opt/rocm/hip/bin/gcc-ar-15.2"
+      - "/usr/bin/site_perl/gcc-ar-15.2"
+      - "/usr/bin/vendor_perl/gcc-ar-15.2"
+      - "/usr/bin/core_perl/gcc-ar-15.2"
+      - "/var/lib/snapd/snap/bin/gcc-ar-15.2"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ar-15.2"
+      - "/home/aleck/go/bin/gcc-ar-15.2"
+      - "/usr/bin/gcc-ar-15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ar-15"
+      - "/usr/share/pyenv/libexec/gcc-ar-15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ar-15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ar-15"
+      - "/opt/rocm/bin/gcc-ar-15"
+      - "/home/aleck/.cargo/bin/gcc-ar-15"
+      - "/home/aleck/.local/bin/gcc-ar-15"
+      - "/home/aleck/.pyenv/shims/gcc-ar-15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ar-15"
+      - "/usr/local/sbin/gcc-ar-15"
+      - "/usr/local/bin/gcc-ar-15"
+      - "/opt/android-sdk/emulator/gcc-ar-15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-15"
+      - "/opt/android-sdk/platform-tools/gcc-ar-15"
+      - "/opt/android-sdk/tools/gcc-ar-15"
+      - "/opt/android-sdk/tools/bin/gcc-ar-15"
+      - "/usr/lib/jvm/default/bin/gcc-ar-15"
+      - "/opt/rocm/hip/bin/gcc-ar-15"
+      - "/usr/bin/site_perl/gcc-ar-15"
+      - "/usr/bin/vendor_perl/gcc-ar-15"
+      - "/usr/bin/core_perl/gcc-ar-15"
+      - "/var/lib/snapd/snap/bin/gcc-ar-15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ar-15"
+      - "/home/aleck/go/bin/gcc-ar-15"
+      - "/usr/bin/gcc-ar15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ar15"
+      - "/usr/share/pyenv/libexec/gcc-ar15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ar15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ar15"
+      - "/opt/rocm/bin/gcc-ar15"
+      - "/home/aleck/.cargo/bin/gcc-ar15"
+      - "/home/aleck/.local/bin/gcc-ar15"
+      - "/home/aleck/.pyenv/shims/gcc-ar15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ar15"
+      - "/usr/local/sbin/gcc-ar15"
+      - "/usr/local/bin/gcc-ar15"
+      - "/opt/android-sdk/emulator/gcc-ar15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar15"
+      - "/opt/android-sdk/platform-tools/gcc-ar15"
+      - "/opt/android-sdk/tools/gcc-ar15"
+      - "/opt/android-sdk/tools/bin/gcc-ar15"
+      - "/usr/lib/jvm/default/bin/gcc-ar15"
+      - "/opt/rocm/hip/bin/gcc-ar15"
+      - "/usr/bin/site_perl/gcc-ar15"
+      - "/usr/bin/vendor_perl/gcc-ar15"
+      - "/usr/bin/core_perl/gcc-ar15"
+      - "/var/lib/snapd/snap/bin/gcc-ar15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ar15"
+      - "/home/aleck/go/bin/gcc-ar15"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ranlib-15.2"
+      - "/usr/share/pyenv/libexec/gcc-ranlib-15.2"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ranlib-15.2"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ranlib-15.2"
+      - "/opt/rocm/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.cargo/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.local/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.pyenv/shims/gcc-ranlib-15.2"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ranlib-15.2"
+      - "/usr/local/sbin/gcc-ranlib-15.2"
+      - "/usr/local/bin/gcc-ranlib-15.2"
+      - "/opt/android-sdk/emulator/gcc-ranlib-15.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-15.2"
+      - "/opt/android-sdk/platform-tools/gcc-ranlib-15.2"
+      - "/opt/android-sdk/tools/gcc-ranlib-15.2"
+      - "/opt/android-sdk/tools/bin/gcc-ranlib-15.2"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-15.2"
+      - "/opt/rocm/hip/bin/gcc-ranlib-15.2"
+      - "/usr/bin/site_perl/gcc-ranlib-15.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
+      - "/usr/bin/core_perl/gcc-ranlib-15.2"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib-15.2"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ranlib-15.2"
+      - "/home/aleck/go/bin/gcc-ranlib-15.2"
+      - "/usr/bin/gcc-ranlib-15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ranlib-15"
+      - "/usr/share/pyenv/libexec/gcc-ranlib-15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ranlib-15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ranlib-15"
+      - "/opt/rocm/bin/gcc-ranlib-15"
+      - "/home/aleck/.cargo/bin/gcc-ranlib-15"
+      - "/home/aleck/.local/bin/gcc-ranlib-15"
+      - "/home/aleck/.pyenv/shims/gcc-ranlib-15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ranlib-15"
+      - "/usr/local/sbin/gcc-ranlib-15"
+      - "/usr/local/bin/gcc-ranlib-15"
+      - "/opt/android-sdk/emulator/gcc-ranlib-15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-15"
+      - "/opt/android-sdk/platform-tools/gcc-ranlib-15"
+      - "/opt/android-sdk/tools/gcc-ranlib-15"
+      - "/opt/android-sdk/tools/bin/gcc-ranlib-15"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-15"
+      - "/opt/rocm/hip/bin/gcc-ranlib-15"
+      - "/usr/bin/site_perl/gcc-ranlib-15"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15"
+      - "/usr/bin/core_perl/gcc-ranlib-15"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib-15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ranlib-15"
+      - "/home/aleck/go/bin/gcc-ranlib-15"
+      - "/usr/bin/gcc-ranlib15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ranlib15"
+      - "/usr/share/pyenv/libexec/gcc-ranlib15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ranlib15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ranlib15"
+      - "/opt/rocm/bin/gcc-ranlib15"
+      - "/home/aleck/.cargo/bin/gcc-ranlib15"
+      - "/home/aleck/.local/bin/gcc-ranlib15"
+      - "/home/aleck/.pyenv/shims/gcc-ranlib15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ranlib15"
+      - "/usr/local/sbin/gcc-ranlib15"
+      - "/usr/local/bin/gcc-ranlib15"
+      - "/opt/android-sdk/emulator/gcc-ranlib15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib15"
+      - "/opt/android-sdk/platform-tools/gcc-ranlib15"
+      - "/opt/android-sdk/tools/gcc-ranlib15"
+      - "/opt/android-sdk/tools/bin/gcc-ranlib15"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib15"
+      - "/opt/rocm/hip/bin/gcc-ranlib15"
+      - "/usr/bin/site_perl/gcc-ranlib15"
+      - "/usr/bin/vendor_perl/gcc-ranlib15"
+      - "/usr/bin/core_perl/gcc-ranlib15"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ranlib15"
+      - "/home/aleck/go/bin/gcc-ranlib15"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/"
+    found: "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.2"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-15.2"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ar-15.2"
+      - "/usr/share/pyenv/libexec/gcc-ar-15.2"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ar-15.2"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ar-15.2"
+      - "/opt/rocm/bin/gcc-ar-15.2"
+      - "/home/aleck/.cargo/bin/gcc-ar-15.2"
+      - "/home/aleck/.local/bin/gcc-ar-15.2"
+      - "/home/aleck/.pyenv/shims/gcc-ar-15.2"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ar-15.2"
+      - "/usr/local/sbin/gcc-ar-15.2"
+      - "/usr/local/bin/gcc-ar-15.2"
+      - "/opt/android-sdk/emulator/gcc-ar-15.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-15.2"
+      - "/opt/android-sdk/platform-tools/gcc-ar-15.2"
+      - "/opt/android-sdk/tools/gcc-ar-15.2"
+      - "/opt/android-sdk/tools/bin/gcc-ar-15.2"
+      - "/usr/lib/jvm/default/bin/gcc-ar-15.2"
+      - "/opt/rocm/hip/bin/gcc-ar-15.2"
+      - "/usr/bin/site_perl/gcc-ar-15.2"
+      - "/usr/bin/vendor_perl/gcc-ar-15.2"
+      - "/usr/bin/core_perl/gcc-ar-15.2"
+      - "/var/lib/snapd/snap/bin/gcc-ar-15.2"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ar-15.2"
+      - "/home/aleck/go/bin/gcc-ar-15.2"
+      - "/usr/bin/gcc-ar-15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ar-15"
+      - "/usr/share/pyenv/libexec/gcc-ar-15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ar-15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ar-15"
+      - "/opt/rocm/bin/gcc-ar-15"
+      - "/home/aleck/.cargo/bin/gcc-ar-15"
+      - "/home/aleck/.local/bin/gcc-ar-15"
+      - "/home/aleck/.pyenv/shims/gcc-ar-15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ar-15"
+      - "/usr/local/sbin/gcc-ar-15"
+      - "/usr/local/bin/gcc-ar-15"
+      - "/opt/android-sdk/emulator/gcc-ar-15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar-15"
+      - "/opt/android-sdk/platform-tools/gcc-ar-15"
+      - "/opt/android-sdk/tools/gcc-ar-15"
+      - "/opt/android-sdk/tools/bin/gcc-ar-15"
+      - "/usr/lib/jvm/default/bin/gcc-ar-15"
+      - "/opt/rocm/hip/bin/gcc-ar-15"
+      - "/usr/bin/site_perl/gcc-ar-15"
+      - "/usr/bin/vendor_perl/gcc-ar-15"
+      - "/usr/bin/core_perl/gcc-ar-15"
+      - "/var/lib/snapd/snap/bin/gcc-ar-15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ar-15"
+      - "/home/aleck/go/bin/gcc-ar-15"
+      - "/usr/bin/gcc-ar15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ar15"
+      - "/usr/share/pyenv/libexec/gcc-ar15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ar15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ar15"
+      - "/opt/rocm/bin/gcc-ar15"
+      - "/home/aleck/.cargo/bin/gcc-ar15"
+      - "/home/aleck/.local/bin/gcc-ar15"
+      - "/home/aleck/.pyenv/shims/gcc-ar15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ar15"
+      - "/usr/local/sbin/gcc-ar15"
+      - "/usr/local/bin/gcc-ar15"
+      - "/opt/android-sdk/emulator/gcc-ar15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ar15"
+      - "/opt/android-sdk/platform-tools/gcc-ar15"
+      - "/opt/android-sdk/tools/gcc-ar15"
+      - "/opt/android-sdk/tools/bin/gcc-ar15"
+      - "/usr/lib/jvm/default/bin/gcc-ar15"
+      - "/opt/rocm/hip/bin/gcc-ar15"
+      - "/usr/bin/site_perl/gcc-ar15"
+      - "/usr/bin/vendor_perl/gcc-ar15"
+      - "/usr/bin/core_perl/gcc-ar15"
+      - "/var/lib/snapd/snap/bin/gcc-ar15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ar15"
+      - "/home/aleck/go/bin/gcc-ar15"
+    found: "/usr/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.2"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ranlib-15.2"
+      - "/usr/share/pyenv/libexec/gcc-ranlib-15.2"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ranlib-15.2"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ranlib-15.2"
+      - "/opt/rocm/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.cargo/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.local/bin/gcc-ranlib-15.2"
+      - "/home/aleck/.pyenv/shims/gcc-ranlib-15.2"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ranlib-15.2"
+      - "/usr/local/sbin/gcc-ranlib-15.2"
+      - "/usr/local/bin/gcc-ranlib-15.2"
+      - "/opt/android-sdk/emulator/gcc-ranlib-15.2"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-15.2"
+      - "/opt/android-sdk/platform-tools/gcc-ranlib-15.2"
+      - "/opt/android-sdk/tools/gcc-ranlib-15.2"
+      - "/opt/android-sdk/tools/bin/gcc-ranlib-15.2"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-15.2"
+      - "/opt/rocm/hip/bin/gcc-ranlib-15.2"
+      - "/usr/bin/site_perl/gcc-ranlib-15.2"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15.2"
+      - "/usr/bin/core_perl/gcc-ranlib-15.2"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib-15.2"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ranlib-15.2"
+      - "/home/aleck/go/bin/gcc-ranlib-15.2"
+      - "/usr/bin/gcc-ranlib-15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ranlib-15"
+      - "/usr/share/pyenv/libexec/gcc-ranlib-15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ranlib-15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ranlib-15"
+      - "/opt/rocm/bin/gcc-ranlib-15"
+      - "/home/aleck/.cargo/bin/gcc-ranlib-15"
+      - "/home/aleck/.local/bin/gcc-ranlib-15"
+      - "/home/aleck/.pyenv/shims/gcc-ranlib-15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ranlib-15"
+      - "/usr/local/sbin/gcc-ranlib-15"
+      - "/usr/local/bin/gcc-ranlib-15"
+      - "/opt/android-sdk/emulator/gcc-ranlib-15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib-15"
+      - "/opt/android-sdk/platform-tools/gcc-ranlib-15"
+      - "/opt/android-sdk/tools/gcc-ranlib-15"
+      - "/opt/android-sdk/tools/bin/gcc-ranlib-15"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib-15"
+      - "/opt/rocm/hip/bin/gcc-ranlib-15"
+      - "/usr/bin/site_perl/gcc-ranlib-15"
+      - "/usr/bin/vendor_perl/gcc-ranlib-15"
+      - "/usr/bin/core_perl/gcc-ranlib-15"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib-15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ranlib-15"
+      - "/home/aleck/go/bin/gcc-ranlib-15"
+      - "/usr/bin/gcc-ranlib15"
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/gcc-ranlib15"
+      - "/usr/share/pyenv/libexec/gcc-ranlib15"
+      - "/usr/share/pyenv/plugins/python-build/bin/gcc-ranlib15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/gcc-ranlib15"
+      - "/opt/rocm/bin/gcc-ranlib15"
+      - "/home/aleck/.cargo/bin/gcc-ranlib15"
+      - "/home/aleck/.local/bin/gcc-ranlib15"
+      - "/home/aleck/.pyenv/shims/gcc-ranlib15"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/gcc-ranlib15"
+      - "/usr/local/sbin/gcc-ranlib15"
+      - "/usr/local/bin/gcc-ranlib15"
+      - "/opt/android-sdk/emulator/gcc-ranlib15"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/gcc-ranlib15"
+      - "/opt/android-sdk/platform-tools/gcc-ranlib15"
+      - "/opt/android-sdk/tools/gcc-ranlib15"
+      - "/opt/android-sdk/tools/bin/gcc-ranlib15"
+      - "/usr/lib/jvm/default/bin/gcc-ranlib15"
+      - "/opt/rocm/hip/bin/gcc-ranlib15"
+      - "/usr/bin/site_perl/gcc-ranlib15"
+      - "/usr/bin/vendor_perl/gcc-ranlib15"
+      - "/usr/bin/core_perl/gcc-ranlib15"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib15"
+      - "/usr/lib/jvm/java-11-openjdk/bin/gcc-ranlib15"
+      - "/home/aleck/go/bin/gcc-ranlib15"
+    found: "/usr/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA"
+      binary: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA'
+        
+        Run Build Command(s): /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_45ade/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_45ade.dir/build.make CMakeFiles/cmTC_45ade.dir/build
+        make[1]: Entering directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA'
+        Building C object CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -c /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260209 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45ade.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_45ade.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccXDM84f.s
+        GNU C23 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20260209, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPC header version 1.3.1 differs from library version 1.4.0.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4a3176b8a5098bb872007d0a1d5e5fb3
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45ade.dir/'
+         as -v --64 -o CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o /tmp/ccXDM84f.s
+        GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_45ade
+        /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45ade.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260209 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45ade' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_45ade.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccghovnN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_45ade /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20260209
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccghovnN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_45ade /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45ade' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_45ade.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -o cmTC_45ade
+        make[1]: Leaving directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_45ade/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_45ade.dir/build.make CMakeFiles/cmTC_45ade.dir/build]
+        ignore line: [make[1]: Entering directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-By5ixA']
+        ignore line: [Building C object CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -c /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260209 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45ade.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_45ade.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccXDM84f.s]
+        ignore line: [GNU C23 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20260209  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPC header version 1.3.1 differs from library version 1.4.0.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4a3176b8a5098bb872007d0a1d5e5fb3]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45ade.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o /tmp/ccXDM84f.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_45ade]
+        ignore line: [/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45ade.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260209 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45ade' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_45ade.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccghovnN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_45ade /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccghovnN.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_45ade] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20260209]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccghovnN.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_45ade /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_45ade.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.46
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23"
+      binary: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23'
+        
+        Run Build Command(s): /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6ab3/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b6ab3.dir/build.make CMakeFiles/cmTC_b6ab3.dir/build
+        make[1]: Entering directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23'
+        Building CXX object CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -c /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260209 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6ab3.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6ab3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc0NMdiH.s
+        GNU C++17 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20260209, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPC header version 1.3.1 differs from library version 1.4.0.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 5e3969de92aa3c12a625237f01b15b2f
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6ab3.dir/'
+         as -v --64 -o CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc0NMdiH.s
+        GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_b6ab3
+        /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6ab3.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260209 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6ab3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6ab3.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOCZZpJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6ab3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20260209
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOCZZpJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6ab3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.46
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6ab3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6ab3.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b6ab3
+        make[1]: Leaving directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1] ==> [/usr/include/c++/15.2.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/15.2.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward] ==> [/usr/include/c++/15.2.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15.2.1;/usr/include/c++/15.2.1/x86_64-pc-linux-gnu;/usr/include/c++/15.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b6ab3/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b6ab3.dir/build.make CMakeFiles/cmTC_b6ab3.dir/build]
+        ignore line: [make[1]: Entering directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-hW1m23']
+        ignore line: [Building CXX object CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -c /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260209 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6ab3.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b6ab3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc0NMdiH.s]
+        ignore line: [GNU C++17 (GCC) version 15.2.1 20260209 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20260209  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPC header version 1.3.1 differs from library version 1.4.0.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5e3969de92aa3c12a625237f01b15b2f]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6ab3.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc0NMdiH.s]
+        ignore line: [GNU assembler version 2.46 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_b6ab3]
+        ignore line: [/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6ab3.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260209 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6ab3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b6ab3.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOCZZpJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6ab3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccOCZZpJ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b6ab3] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20260209]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOCZZpJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b6ab3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b6ab3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.46
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/FindPython/Support.cmake:2127 (find_program)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/FindPython.cmake:721 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    mode: "program"
+    variable: "_Python_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.15mu"
+      - "python3.15m"
+      - "python3.15u"
+      - "python3.15"
+      - "python3.15dmu"
+      - "python3.15dm"
+      - "python3.15du"
+      - "python3.15d"
+      - "python3.14mu"
+      - "python3.14m"
+      - "python3.14u"
+      - "python3.14"
+      - "python3.14dmu"
+      - "python3.14dm"
+      - "python3.14du"
+      - "python3.14d"
+      - "python3.13mu"
+      - "python3.13m"
+      - "python3.13u"
+      - "python3.13"
+      - "python3.13dmu"
+      - "python3.13dm"
+      - "python3.13du"
+      - "python3.13d"
+      - "python3.12mu"
+      - "python3.12m"
+      - "python3.12u"
+      - "python3.12"
+      - "python3.12dmu"
+      - "python3.12dm"
+      - "python3.12du"
+      - "python3.12d"
+      - "python3.11mu"
+      - "python3.11m"
+      - "python3.11u"
+      - "python3.11"
+      - "python3.11dmu"
+      - "python3.11dm"
+      - "python3.11du"
+      - "python3.11d"
+      - "python3.10mu"
+      - "python3.10m"
+      - "python3.10u"
+      - "python3.10"
+      - "python3.10dmu"
+      - "python3.10dm"
+      - "python3.10du"
+      - "python3.10d"
+      - "python3.9mu"
+      - "python3.9m"
+      - "python3.9u"
+      - "python3.9"
+      - "python3.9dmu"
+      - "python3.9dm"
+      - "python3.9du"
+      - "python3.9d"
+      - "python3.8mu"
+      - "python3.8m"
+      - "python3.8u"
+      - "python3.8"
+      - "python3.8dmu"
+      - "python3.8dm"
+      - "python3.8du"
+      - "python3.8d"
+      - "python3.7mu"
+      - "python3.7m"
+      - "python3.7u"
+      - "python3.7"
+      - "python3.7dmu"
+      - "python3.7dm"
+      - "python3.7du"
+      - "python3.7d"
+      - "python3.6mu"
+      - "python3.6m"
+      - "python3.6u"
+      - "python3.6"
+      - "python3.6dmu"
+      - "python3.6dm"
+      - "python3.6du"
+      - "python3.6d"
+      - "python3.5mu"
+      - "python3.5m"
+      - "python3.5u"
+      - "python3.5"
+      - "python3.5dmu"
+      - "python3.5dm"
+      - "python3.5du"
+      - "python3.5d"
+      - "python3.4mu"
+      - "python3.4m"
+      - "python3.4u"
+      - "python3.4"
+      - "python3.4dmu"
+      - "python3.4dm"
+      - "python3.4du"
+      - "python3.4d"
+      - "python3.3mu"
+      - "python3.3m"
+      - "python3.3u"
+      - "python3.3"
+      - "python3.3dmu"
+      - "python3.3dm"
+      - "python3.3du"
+      - "python3.3d"
+      - "python3.2mu"
+      - "python3.2m"
+      - "python3.2u"
+      - "python3.2"
+      - "python3.2dmu"
+      - "python3.2dm"
+      - "python3.2du"
+      - "python3.2d"
+      - "python3.1mu"
+      - "python3.1m"
+      - "python3.1u"
+      - "python3.1"
+      - "python3.1dmu"
+      - "python3.1dm"
+      - "python3.1du"
+      - "python3.1d"
+      - "python3.0mu"
+      - "python3.0m"
+      - "python3.0u"
+      - "python3.0"
+      - "python3.0dmu"
+      - "python3.0dm"
+      - "python3.0du"
+      - "python3.0d"
+      - "python3"
+      - "python"
+    candidate_directories:
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/Scripts/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/"
+    searched_directories:
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15mu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15m"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15u"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15dmu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15dm"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15du"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.15d"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14mu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14m"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14u"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14dmu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14dm"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14du"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.14d"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13mu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13m"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13u"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13dmu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13dm"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13du"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.13d"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12mu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12m"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12u"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12dmu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12dm"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12du"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.12d"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.11mu"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.11m"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.11u"
+    found: "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/python3.11"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/FindPython/Support.cmake:3331 (find_library)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/FindPython.cmake:721 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    mode: "library"
+    variable: "_Python_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python311"
+      - "python3.11"
+    candidate_directories:
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/libs/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/python3.11/config-3.11/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/"
+      - "/home/aleck/.pyenv/versions/3.11.14/libs/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/config-3.11/"
+      - "/home/aleck/.pyenv/versions/3.11.14/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/config-3.11-x86_64-linux-gnu/lib/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/config-3.11-x86_64-linux-gnu/libs/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/config-3.11-x86_64-linux-gnu/lib/python3.11/config-3.11/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/config-3.11-x86_64-linux-gnu/"
+    searched_directories:
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/libs/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/libs/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/python3.11/config-3.11/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/python3.11/config-3.11/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/"
+    found: "/home/aleck/.pyenv/versions/3.11.14/lib/libpython3.11.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/FindPython/Support.cmake:3846 (find_path)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/FindPython.cmake:721 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    mode: "path"
+    variable: "_Python_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "Python.h"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/include/python3.11/"
+    found: "/home/aleck/.pyenv/versions/3.11.14/include/python3.11/"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "/usr/lib/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
+      - "/usr/lib/cmake/pybind11/pybind11Common.cmake:377 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "/usr/lib/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
+      - "/usr/lib/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:5 (find_package)"
+    checks:
+      - "Performing Test HAS_FLTO_AUTO"
+    directories:
+      source: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-1URUUp"
+      binary: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-1URUUp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_FLTO_AUTO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-1URUUp'
+        
+        Run Build Command(s): /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e70b8/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e70b8.dir/build.make CMakeFiles/cmTC_e70b8.dir/build
+        make[1]: Entering directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-1URUUp'
+        Building CXX object CMakeFiles/cmTC_e70b8.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_FLTO_AUTO  -flto=auto -fno-fat-lto-objects -o CMakeFiles/cmTC_e70b8.dir/src.cxx.o -c /home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-1URUUp/src.cxx
+        Linking CXX executable cmTC_e70b8
+        /home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e70b8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_e70b8.dir/src.cxx.o -o cmTC_e70b8  -flto=auto
+        make[1]: Leaving directory '/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/CMakeScratch/TryCompile-1URUUp'
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:5 (find_package)"
+    name: "pybind11"
+    configs:
+      -
+        filename: "pybind11.cps"
+        kind: "cps"
+      -
+        filename: "pybind11Config.cmake"
+        kind: "cmake"
+      -
+        filename: "pybind11-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pybind11"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/pkgRedirects/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/build_cpp/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/versions/3.11.14/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/versions/3.11.14/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/versions/3.11.14/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/versions/3.11.14/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/libexec/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/libexec/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/libexec/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/libexec/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/plugins/python-build/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/plugins/python-build/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/plugins/python-build/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/pyenv/plugins/python-build/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/env/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/env/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/env/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/Documents/projects/InVision/src/cv-invision/env/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/rocm/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/rocm/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/rocm/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/rocm/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.cargo/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.cargo/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.cargo/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.cargo/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.local/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.local/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.local/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.local/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/shims/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/shims/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/shims/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.pyenv/shims/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.config/nvm/versions/node/v22.11.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.config/nvm/versions/node/v22.11.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.config/nvm/versions/node/v22.11.0/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/aleck/.config/nvm/versions/node/v22.11.0/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/pybind11/pybind11Config.cmake"
+      mode: "config"
+      version: "3.0.3"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:8 (find_library)"
+    mode: "library"
+    variable: "TENSORFLOW_LITE_LIB"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tensorflow-lite"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/lib/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/usr/lib/"
+      - "/usr/local/lib/"
+    searched_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libtensorflow-lite.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "CMakeLists.txt:15 (find_path)"
+    mode: "path"
+    variable: "TENSORFLOW_LITE_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tensorflow/lite/model.h"
+    candidate_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/"
+      - "/usr/share/pyenv/libexec/"
+      - "/usr/share/pyenv/plugins/python-build/bin/"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/"
+      - "/opt/rocm/bin/"
+      - "/home/aleck/.cargo/bin/"
+      - "/home/aleck/.local/bin/"
+      - "/home/aleck/.pyenv/shims/"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/android-sdk/emulator/"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/"
+      - "/opt/android-sdk/platform-tools/"
+      - "/opt/android-sdk/tools/"
+      - "/opt/android-sdk/tools/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/opt/rocm/hip/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/usr/lib/jvm/java-11-openjdk/bin/"
+      - "/home/aleck/go/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/include/"
+      - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/usr/include/"
+      - "/usr/local/include/"
+    searched_directories:
+      - "/home/aleck/.pyenv/versions/3.11.14/bin/tensorflow/lite/model.h"
+      - "/usr/share/pyenv/libexec/tensorflow/lite/model.h"
+      - "/usr/share/pyenv/plugins/python-build/bin/tensorflow/lite/model.h"
+      - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin/tensorflow/lite/model.h"
+      - "/opt/rocm/bin/tensorflow/lite/model.h"
+      - "/home/aleck/.cargo/bin/tensorflow/lite/model.h"
+      - "/home/aleck/.local/bin/tensorflow/lite/model.h"
+      - "/home/aleck/.pyenv/shims/tensorflow/lite/model.h"
+      - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin/tensorflow/lite/model.h"
+      - "/usr/local/sbin/tensorflow/lite/model.h"
+      - "/usr/local/bin/tensorflow/lite/model.h"
+      - "/usr/bin/tensorflow/lite/model.h"
+      - "/opt/android-sdk/emulator/tensorflow/lite/model.h"
+      - "/opt/android-sdk/cmdline-tools/latest/bin/tensorflow/lite/model.h"
+      - "/opt/android-sdk/platform-tools/tensorflow/lite/model.h"
+      - "/opt/android-sdk/tools/tensorflow/lite/model.h"
+      - "/opt/android-sdk/tools/bin/tensorflow/lite/model.h"
+      - "/usr/lib/jvm/default/bin/tensorflow/lite/model.h"
+      - "/opt/rocm/hip/bin/tensorflow/lite/model.h"
+      - "/usr/bin/site_perl/tensorflow/lite/model.h"
+      - "/usr/bin/vendor_perl/tensorflow/lite/model.h"
+      - "/usr/bin/core_perl/tensorflow/lite/model.h"
+      - "/var/lib/snapd/snap/bin/tensorflow/lite/model.h"
+      - "/usr/lib/jvm/java-11-openjdk/bin/tensorflow/lite/model.h"
+      - "/home/aleck/go/bin/tensorflow/lite/model.h"
+      - "/usr/local/include/tensorflow/lite/model.h"
+      - "/usr/local/tensorflow/lite/model.h"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/aleck/.pyenv/versions/3.11.14/bin"
+        - "/usr/share/pyenv/libexec"
+        - "/usr/share/pyenv/plugins/python-build/bin"
+        - "/home/aleck/Documents/projects/InVision/src/cv-invision/env/bin"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.pyenv/shims"
+        - "/opt/rocm/bin"
+        - "/home/aleck/.cargo/bin"
+        - "/home/aleck/.local/bin"
+        - "/home/aleck/.config/nvm/versions/node/v22.11.0/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/android-sdk/emulator"
+        - "/opt/android-sdk/cmdline-tools/latest/bin"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/tools/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/opt/rocm/bin"
+        - "/opt/rocm/hip/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+        - "/usr/lib/jvm/java-11-openjdk/bin"
+        - "/opt/android-sdk/tools"
+        - "/opt/android-sdk/platform-tools"
+        - "/opt/android-sdk/emulator"
+        - "/home/aleck/go/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/aleck/.pyenv/versions/3.11.14/lib/python3.11/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+...

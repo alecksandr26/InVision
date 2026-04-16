@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -flto=auto -Wl,--dependency-file=CMakeFiles/inference_engine_cpp.dir/link.d  -o inference_engine_cpp.cpython-311-x86_64-linux-gnu.so CMakeFiles/inference_engine_cpp.dir/inference_engine.cpp.o  /usr/lib/libtensorflow-lite.so -lpthread -ldl
