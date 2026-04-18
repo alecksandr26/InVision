@@ -228,3 +228,4 @@ __marimo__/
 **/logs/
 **/build/
 **/build_cpp/
+**/*.out
