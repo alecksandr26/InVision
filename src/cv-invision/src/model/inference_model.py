@@ -1,21 +1,23 @@
 import numpy as np
 import cv2
+import os
+
 from .const import UNIFIED_CLASSES
 from ..utils.log import get_logger
 
 logger = get_logger(__name__)
 
-# Try to import the compiled C++ module (relative import)
+# Try to import the C++ post-processing module
 try:
-    from .inference_engine_cpp import InferenceEngine as CppInferenceEngine
-    CPP_AVAILABLE = False
-    logger.info("✓ C++ inference engine loaded successfully")
+    from .postprocess_cpp import postprocess as cpp_postprocess
+    CPP_POSTPROCESS_AVAILABLE = True
+    logger.info("✓ C++ post-processing module loaded")
 except ImportError as e:
-    CPP_AVAILABLE = False
-    logger.warning(f"⚠ C++ engine not available, falling back to Python: {e}")
+    CPP_POSTPROCESS_AVAILABLE = False
+    logger.warning(f"⚠ C++ post-processing not available, using Python fallback: {e}")
 
 # =============================================================================
-# MOCK CLASSES (unchanged)
+# MOCK CLASSES (unchanged – they consume the same dict format)
 # =============================================================================
 
 class MockTensor:
@@ -73,27 +75,29 @@ class MockResults:
 
 
 # =============================================================================
-# TFLITE INFERENCE MODEL (C++ with Python fallback)
+# TFLITE INFERENCE MODEL (Python TFLite + C++ post-processing)
 # =============================================================================
 
 class TFLiteInferenceModel:
     def __init__(self, model_path, num_threads=4, conf_thres=0.25, iou_thres=0.45):
-        if CPP_AVAILABLE:
-            self._cpp_mode = True
-            self._engine = CppInferenceEngine(str(model_path), num_threads,
-                                              conf_thres, iou_thres)
-            self.names = {i: name for i, name in enumerate(UNIFIED_CLASSES)}
-            logger.info("🚀 Using C++ inference engine (fast mode)")
+        logger.info(f"🔄 Initializing TFLite interpreter with {num_threads} threads")
+        
+        # We always use Python TFLite inference (fallback), but post‑processing may be C++
+        self._cpp_mode = False   # No full C++ engine
+        
+        self._init_fallback(model_path, num_threads, conf_thres, iou_thres)
+        
+        logger.info("🐍 Using Python TFLite inference engine")
+        if CPP_POSTPROCESS_AVAILABLE:
+            logger.info("⚡ Using C++ post-processing (fast)")
         else:
-            self._cpp_mode = False
-            self._init_fallback(model_path, num_threads, conf_thres, iou_thres)
-            logger.info("🐍 Using Python fallback inference engine (slow mode)")
+            logger.info("🐍 Using Python post-processing (slow)")
 
     def _init_fallback(self, model_path, num_threads, conf_thres, iou_thres):
         from tensorflow import lite as tflite
-        # import tflite_runtime.interpreter as tflite
-
-
+        logger.info(f"🔧 Forced using tensorflow.lite backend (x86/ARM)")
+        logger.info(f"🧵 Initializing TFLite interpreter with {num_threads} threads")
+        
         self.interpreter = tflite.Interpreter(
             model_path=str(model_path),
             num_threads=num_threads,
@@ -118,7 +122,8 @@ class TFLiteInferenceModel:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         return np.expand_dims(img.astype(np.float32) / 255.0, axis=0)
 
-    def _postprocess(self, output_data, orig_h, orig_w):
+    def _postprocess_python(self, output_data, orig_h, orig_w):
+        """Original Python post‑processing (fallback)"""
         pred = output_data[0].T
         conf_th = self.conf_thres
         scores = np.max(pred[:, 4:], axis=1)
@@ -148,18 +153,24 @@ class TFLiteInferenceModel:
         return final
 
     def __call__(self, frame, verbose=False):
-        if self._cpp_mode:
-            # C++ engine expects RGB, OpenCV gives BGR
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            detections = self._engine.run_inference(frame_rgb)
-            results = [MockResults(detections, self.names)]
+        # 1. Preprocess
+        input_data = self._preprocess(frame)
+        # 2. Run TFLite inference
+        self._set_tensor(self._input_idx, input_data)
+        self._invoke()
+        output_data = self._get_tensor(self._output_idx)   # numpy array
+
+        # 3. Post-process – use C++ if available, else Python
+        if CPP_POSTPROCESS_AVAILABLE:
+            # C++ function expects (output_array, orig_h, orig_w, conf_thres, iou_thres)
+            detections = cpp_postprocess(
+                output_data, frame.shape[0], frame.shape[1],
+                self.conf_thres, self.iou_thres
+            )
         else:
-            input_data = self._preprocess(frame)
-            self._set_tensor(self._input_idx, input_data)
-            self._invoke()
-            output_data = self._get_tensor(self._output_idx)
-            detections = self._postprocess(output_data, frame.shape[0], frame.shape[1])
-            results = [MockResults(detections, self.names)]
+            detections = self._postprocess_python(output_data, frame.shape[0], frame.shape[1])
+
+        results = [MockResults(detections, self.names)]
 
         if verbose:
             print(results[0])

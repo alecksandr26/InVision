@@ -227,3 +227,4 @@ __marimo__/
 # Logs
 **/logs/
 **/build/
+**/build_cpp/

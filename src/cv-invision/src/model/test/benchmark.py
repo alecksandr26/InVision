@@ -7,6 +7,9 @@ import psutil
 import argparse
 import threading
 import numpy as np
+import cProfile
+import pstats
+from io import StringIO
 from pathlib import Path
 
 from src.model.detection_model import load_detection_model_test, load_detection_model_prod
@@ -253,17 +256,23 @@ def parse_args():
         default = 3,
         help    = "Number of warmup runs (default: 3)"
     )
+    parser.add_argument(
+        "--profile",
+        action  = "store_true",
+        help    = "Run benchmark under cProfile and save stats to profile.out"
+    )
     return parser.parse_args()
 
 
 # ============================================================
-# MAIN
+# MAIN (with profiling support)
 # ============================================================
 
-def main():
-    args  = parse_args()
+def _run_benchmark(args):
+    """
+    Core benchmarking logic (separated to be profiled).
+    """
     image = cv2.imread(args.input)
-
     if image is None:
         logger.error(f"Could not read image: '{args.input}'")
         raise SystemExit(1)
@@ -278,6 +287,25 @@ def main():
         run_comparison(image, runs=args.runs, warmup_runs=args.warmup)
     else:
         run_single(args.mode, image, runs=args.runs, warmup_runs=args.warmup)
+
+
+def main():
+    args = parse_args()
+    if args.profile:
+        logger.info("📈 Running under cProfile...")
+        profiler = cProfile.Profile()
+        profiler.enable()
+        _run_benchmark(args)
+        profiler.disable()
+        # Save raw stats
+        profiler.dump_stats("profile.out")
+        # Print top 30 functions by cumulative time
+        stream = StringIO()
+        stats = pstats.Stats(profiler, stream=stream).sort_stats('cumulative')
+        stats.print_stats(30)
+        logger.info("\n📈 cProfile output (top 30 cumulative):\n" + stream.getvalue())
+    else:
+        _run_benchmark(args)
 
 
 if __name__ == "__main__":

@@ -22,7 +22,7 @@ def download_detection_model(version: str = INVISION_DETECTION_MODEL_CURRENT_VER
 
     logger.info(f"Downloading Invision Detection Model {version} ({model['architecture']} | {model['train_run']})...")
 
-    gdown.download(url, dest, fuzzy = True)  # fuzzy=True handles all GDrive URL formats + confirmation
+    gdown.download(url, dest)
 
     logger.info(f"✅ Detection model {version} saved to '{dest}'")
 
@@ -69,7 +69,7 @@ def download_quantized_model(version: str = INVISION_DETECTION_MODEL_CURRENT_VER
     logger.info(f"Downloading Quantized Invision Model {version} to {dest}...")
     
     # Download the file
-    gdown.download(url, str(dest), fuzzy = True)
+    gdown.download(url, str(dest))
     
     logger.info(f"✅ Quantized TFLite model {version} saved to '{dest}'")
 

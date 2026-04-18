@@ -27,7 +27,8 @@ benchmark:
 		$(if $(input), --input $(input)) \
 		$(if $(mode), --mode $(mode), --mode compare) \
 		$(if $(runs), --runs $(runs), --runs 20) \
-		$(if $(warmup), --warmup $(warmup), --warmup 3)
+		$(if $(warmup), --warmup $(warmup), --warmup 3) \
+		--profile
 
 
 run-pipeline:

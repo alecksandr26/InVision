@@ -1,3 +1,5 @@
+import multiprocessing
+
 from .const import DETECTION_CONF_TEST, DETECTION_IOU_TEST, DETECTION_CONF_PROD, DETECTION_IOU_PROD, \
     INVISION_DETECTION_MODEL_CURRENT_VERSION, INVISION_DETECTION_MODEL
 
@@ -65,14 +67,17 @@ def load_detection_model_prod(version: str = INVISION_DETECTION_MODEL_CURRENT_VE
     logger.info(f"🚀 Loading Detection Model {version} in PROD mode...")
 
     # ── CPU/Edge Optimization (Raspberry Pi Path) ──────────────────
-    if device == "cpu" or True:
+    if device == "cpu":
         if Path(quantized_path).exists():
             logger.info(f"📦 Found pre-downloaded quantized TFLite model: {quantized_path}")
-            # We don't use torch.load here because it's a TFLite file!
-            # model = YOLO(str(quantized_path), task="detect")
+            
+            cpu_count = multiprocessing.cpu_count()
+            num_threads = min(cpu_count, 8)
+            logger.info(f"🧵 Using {num_threads} threads (system has {cpu_count} logical cores)")
+            
             model = TFLiteInferenceModel(
                 str(quantized_path),
-                num_threads=4,
+                num_threads=num_threads,
                 conf_thres = DETECTION_CONF_PROD,
                 iou_thres = DETECTION_IOU_PROD,
             )
