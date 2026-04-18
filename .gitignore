@@ -229,3 +229,9 @@ __marimo__/
 **/build/
 **/build_cpp/
 **/*.out
+
+
+**/.godot/
+**/*.translation
+**/export_presets.cfg
+
