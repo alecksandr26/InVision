@@ -43,20 +43,47 @@ class PostDevelopCommand(develop):
 
 
 
+# 1. Detailed System Detection
+system = platform.system()  # 'Linux', 'Darwin' (Mac), or 'Windows'
+machine = platform.machine() # 'x86_64' or 'arm64'/'aarch64'
+
+# Raspberry Pi 5 check
+is_pi = system == "Linux" and (machine.startswith('arm') or machine.startswith('aarch64'))
+is_mac = system == "Darwin"
 
 
-# Detect architecture
-is_arm = platform.machine().startswith('aarch64') or platform.machine().startswith('arm')
+# 2. Base Configuration
+include_dirs = ["/usr/local/include/opencv4", "/usr/include/opencv4"]
+library_dirs = ["/usr/local/lib"]
+libraries = ["opencv_core", "opencv_imgproc", "opencv_imgcodecs"]
+extra_compile_args = ["-std=c++17", "-O3"]
+extra_link_args = ["-Wl,-rpath,/usr/local/lib"]
 
-# Set architecture-specific flags
-if is_arm:
-    # High-performance flags for Raspberry Pi 5
-    march_flag = "-march=armv8.2-a+dotprod"
-else:
-    # Generic optimization for your Arch laptop (x86_64)
-    march_flag = "-march=native"
+# 3. Platform-Specific Overrides
+if is_pi:
+    # Raspberry Pi 5 specific flags
+    extra_compile_args += ["-march=armv8.2-a+dotprod", "-fopenmp"]
+    libraries += ["gomp"]
+elif is_mac:
+    # 1. OpenCV Paths
+    include_dirs.append("/opt/homebrew/include/opencv4")
+    library_dirs.append("/opt/homebrew/lib")
     
+    # 2. OpenMP (libomp) Paths
+    include_dirs.append("/opt/homebrew/opt/libomp/include")
+    library_dirs.append("/opt/homebrew/opt/libomp/lib")
+    
+    # 3. macOS Flags
+    extra_compile_args += ["-Xpreprocessor", "-fopenmp"]
+    extra_link_args += ["-lomp", "-Wl,-rpath,/opt/homebrew/lib"]
+else:
+    # Generic Linux (Arch Laptop)
+    extra_compile_args += ["-march=native", "-fopenmp"]
+    libraries += ["gomp"]
 
+
+
+# 4. Define Extension
 ext_module = Pybind11Extension(
     "model.cpp_inference",
     [
@@ -64,24 +91,13 @@ ext_module = Pybind11Extension(
         "src/model/cpp_inference/postprocess.cpp",
         "src/model/cpp_inference/preprocess.cpp",
     ],
-    include_dirs=["/usr/local/include/opencv4"],
-    library_dirs=["/usr/local/lib"],
-    libraries=[
-        "opencv_core", 
-        "opencv_imgproc", 
-        "opencv_imgcodecs",
-        "gomp" # Enables OpenMP for multi-core performance on Pi 5
-    ],
-    extra_compile_args=[
-        "-std=c++17", 
-        "-O3", 
-        march_flag,
-        "-fopenmp"
-    ],
-    extra_link_args=[
-        "-Wl,-rpath,/usr/local/lib" # Fixes "undefined symbol" at runtime
-    ],
+    include_dirs=include_dirs,
+    library_dirs=library_dirs,
+    libraries=libraries,
+    extra_compile_args=extra_compile_args,
+    extra_link_args=extra_link_args,
 )
+
 
 setup(
     name="cv_invision",
@@ -93,6 +109,7 @@ setup(
         "opencv-python-headless", # Use headless to avoid binary conflicts
         "pillow>=9.0.0",
         "tensorflow>=2.15.0,<2.18",
+        "deep-sort-realtime>=1.3.2",
         "ultralytics>=8.0.0",
         "pandas>=1.5.0",
         "matplotlib>=3.5.0",
