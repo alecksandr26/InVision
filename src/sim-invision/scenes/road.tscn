@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cfj3je3h1bi0l"]
+
+[ext_resource type="PackedScene" uid="uid://kbam0c0hqk8i" path="res://imports/model/city_road/free_city_road_layout_mockup.glb" id="1_mv8x7"]
+
+[node name="road" type="Node3D" unique_id=968791723]
+
+[node name="Sketchfab_Scene" parent="." unique_id=499523216 instance=ExtResource("1_mv8x7")]

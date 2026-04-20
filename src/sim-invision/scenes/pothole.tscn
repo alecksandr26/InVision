@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://djef6caya4rbq"]
+
+[ext_resource type="PackedScene" uid="uid://dnlffkubb0y6q" path="res://imports/model/pothole/photoscan_-_pothole_1.glb" id="1_hp5aq"]
+
+[node name="pothole" type="Node3D" unique_id=689036943]
+
+[node name="Sketchfab_Scene" parent="." unique_id=638697206 instance=ExtResource("1_hp5aq")]

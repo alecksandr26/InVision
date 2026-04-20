@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c0kv176okixn4"]
+
+[ext_resource type="PackedScene" uid="uid://qbl14qv7jown" path="res://imports/model/city/city_props.glb" id="1_xibgj"]
+
+[node name="City" type="Node3D" unique_id=288542456]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1548693205 instance=ExtResource("1_xibgj")]

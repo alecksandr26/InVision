@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://426jmr1v2ve7"]
+
+[ext_resource type="PackedScene" uid="uid://b47tqevbwtu3d" path="res://imports/model/bmw/1979_bmw_m1.glb" id="1_ocrwv"]
+
+[node name="car_bmw" type="Node3D" unique_id=1356048827]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1533929499 instance=ExtResource("1_ocrwv")]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)

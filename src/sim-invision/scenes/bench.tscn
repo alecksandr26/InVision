@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d4c1ydx40b813"]
+
+[ext_resource type="PackedScene" uid="uid://dflg8boadmm08" path="res://imports/model/bench/bench.glb" id="1_3vt41"]
+
+[node name="bench" type="Node3D" unique_id=710521655]
+
+[node name="Sketchfab_Scene" parent="." unique_id=2141108701 instance=ExtResource("1_3vt41")]

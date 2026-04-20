@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://mjb2kmuqy5dn"]
+
+[ext_resource type="PackedScene" uid="uid://bmpjpnfw7phy1" path="res://imports/model/trash_bags/animal_crossing_new_horizons_trash_bags.glb" id="1_6o3hs"]
+
+[node name="trash_bags" type="Node3D" unique_id=1430356090]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1967486770 instance=ExtResource("1_6o3hs")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
