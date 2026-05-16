@@ -2,9 +2,10 @@
 #include <string>
 #include <algorithm>
 #include <cctype>
-#include <unistd.h>  // 🔥 para usleep
+#include <unistd.h> 
+#include <core/common/ydlidar_help.h>
+
 #include "CYdLidar.h"
-#include "core/common/ydlidar_help.h"
 
 using namespace std;
 using namespace ydlidar;
@@ -135,28 +136,36 @@ int main(int argc, char *argv[])
 
   LaserScan scan;
 
-  while (ydlidar::os_isOk())
-  {
-    if (laser.doProcessSimple(scan))
-    {
-      for (size_t i = 0; i < scan.points.size(); ++i)
-      {
-        const LaserPoint &p = scan.points.at(i);
+  while (ydlidar::os_isOk()) {
+    if (laser.doProcessSimple(scan)) {
+     
+      float min_angle = 0.0;
+      float max_angle = 180.0;
 
-        float angle = p.angle * 180.0 / M_PI;
-        float distance_cm = p.range * 100;  // 🔥 cm
-
-        // filtro de ruido
-        if (distance_cm <= 0 || distance_cm > 600) continue;
-
-        printf("%.2f,%.2f\n", angle, distance_cm);
+      printf("------------------------------------------\n");
+      printf("Scaned Points: %d\n", scan.points.size());
+      
+      for (size_t i = 0; i < scan.points.size(); ++i) {
+	const LaserPoint &p = scan.points.at(i);
+          
+	float angle = p.angle * 180.0 / M_PI;
+	float distance_cm = p.range * 100;
+          
+	// 1. Filter by distance (Noise Filter)
+	if (distance_cm >= 150 || distance_cm <= 0) continue;
+          
+	// 2. Filter by angular "grades" (Field of View)
+	if (angle >= min_angle && angle <= max_angle) {
+	  printf("Angle: %.2f, Dist: %.2f cm\n", angle, distance_cm);
+              
+	  // This is where you'd send data to InVision or Godot
+	}
       }
-
+      
       // ralentizar lectura
-      usleep(100000); // 100 ms
+      usleep(80000);
     }
-    else
-    {
+    else {
       error("Failed to get Lidar Data");
     }
   }
