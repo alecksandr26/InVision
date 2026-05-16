@@ -62,7 +62,7 @@ static ScanResult make_result(Scan scan) {
 // ─────────────────────────────────────────────────────────────────────────────
 //  Module definition
 // ─────────────────────────────────────────────────────────────────────────────
-PYBIND11_MODULE(lidar_sdk, m) {
+PYBIND11_MODULE(lidar_invision, m) {
   m.doc() = "YDLIDAR rolling-buffer Python bindings";
 
   // ── ScanResult ────────────────────────────────────────────────────────

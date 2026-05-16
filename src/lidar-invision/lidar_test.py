@@ -48,6 +48,14 @@ def test_hardware(port: str = ""):
 
     mgr = LidarManager()
 
+    cfg = Config()
+    # Explicitly force the port and baudrate for the T-mini
+    cfg.port = port if port else "/dev/ttyUSB0" 
+    cfg.baudrate = 230400  # T-mini default baudrate
+    cfg.frequency = 10.0
+    
+    mgr.configure(cfg)
+    
     # Configure via individual setters (also valid, mirrors the Config object)
     if port:
         mgr.set_port(port)
@@ -65,8 +73,8 @@ def test_hardware(port: str = ""):
     print(f"✓ Running: {mgr}")
 
     # ── Wait for the first scan to arrive ────────────────────────────────
-    print("Waiting for first scan (up to 3 s)…")
-    deadline = time.monotonic() + 3.0
+    print("Waiting for first scan (up to 7 s)…")
+    deadline = time.monotonic() + 7.0
     while time.monotonic() < deadline:
         scan = mgr.fetch_scan()
         if scan.scan_index > 0:
