@@ -14,29 +14,27 @@ from src.utils.log import get_logger
 
 logger = get_logger(__name__)
 
+def build_full_pipeline(source, model, tracker):
+    logger.info("🏭 Building full pipeline...")
 
-def build_tracking_pipeline(source, model, tracker): # ← Removed 'output' arg
-    logger.info("🏭 Building tracking pipeline...")
-
-    # 1. Determine policy based on source type
     if isinstance(source, VideoFileSource):
-        reader_policy = DropPolicy.BLOCK
+        reader_policy   = DropPolicy.BLOCK
+        renderer_policy = DropPolicy.BLOCK
     else:
-        reader_policy = DropPolicy.DROP_OLDEST
+        reader_policy   = DropPolicy.DROP_OLDEST
+        renderer_policy = DropPolicy.DROP_OLDEST
 
-    # 2. Setup queues (Added output_queue)
     frame_queue     = queue.Queue(maxsize=QUEUE_SIZE_READER)
     detection_queue = queue.Queue(maxsize=QUEUE_SIZE_DETECTOR)
     tracks_queue    = queue.Queue(maxsize=QUEUE_SIZE_TRACKER)
-    output_queue    = queue.Queue(maxsize=10) # ← Catch-all for main thread
+    output_queue    = queue.Queue(maxsize=10)
 
-    # 3. Configure stages
     stages = [
         ReaderStage(
             name        = THREAD_READER,
             source      = source,
             out_queue   = frame_queue,
-            drop_policy = reader_policy, # ← Using dynamic policy
+            drop_policy = reader_policy,
         ),
         DetectorStage(
             name        = THREAD_DETECTOR,
@@ -53,49 +51,36 @@ def build_tracking_pipeline(source, model, tracker): # ← Removed 'output' arg
             drop_policy = TRACKER_DROP_POLICY,
         ),
         RendererStage(
-            name      = THREAD_RENDERER,
-            in_queue  = tracks_queue,
-            out_queue = output_queue, # ← Now points to output_queue
-            # Removed 'output = output' line
+            name        = THREAD_RENDERER,
+            in_queue    = tracks_queue,
+            out_queue   = output_queue,
+            drop_policy = renderer_policy, 
         ),
     ]
 
     logger.info(f"✅ Pipeline built — {len(stages)} stages ready")
-    return stages, output_queue # ← Returning both now
+    return stages, output_queue
 
+def build_tracking_pipeline(source, model, tracker):
+    return build_full_pipeline(source, model, tracker)
 
-def build_detection_pipeline(source, model): # ← Removed 'output' arg
+def build_detection_pipeline(source, model):
     logger.info("🏭 Building detection-only pipeline...")
 
     if isinstance(source, VideoFileSource):
-        reader_policy = DropPolicy.BLOCK
+        reader_policy   = DropPolicy.BLOCK
+        renderer_policy = DropPolicy.BLOCK
     else:
-        reader_policy = DropPolicy.DROP_OLDEST
+        reader_policy   = DropPolicy.DROP_OLDEST
+        renderer_policy = DropPolicy.DROP_OLDEST
 
     frame_queue     = queue.Queue(maxsize=QUEUE_SIZE_READER)
     detection_queue = queue.Queue(maxsize=QUEUE_SIZE_DETECTOR)
-    output_queue    = queue.Queue(maxsize=10) # ← Added
+    output_queue    = queue.Queue(maxsize=10) 
 
     stages = [
-        ReaderStage(
-            name        = THREAD_READER,
-            source      = source,
-            out_queue   = frame_queue,
-            drop_policy = reader_policy,
-        ),
-        DetectorStage(
-            name        = THREAD_DETECTOR,
-            model       = model,
-            in_queue    = frame_queue,
-            out_queue   = detection_queue,
-            drop_policy = DETECTOR_DROP_POLICY,
-        ),
-        RendererStage(
-            name      = THREAD_RENDERER,
-            in_queue  = detection_queue,
-            out_queue = output_queue, # ← Added
-        ),
+        ReaderStage(name=THREAD_READER, source=source, out_queue=frame_queue, drop_policy=reader_policy),
+        DetectorStage(name=THREAD_DETECTOR, model=model, in_queue=frame_queue, out_queue=detection_queue, drop_policy=DETECTOR_DROP_POLICY),
+        RendererStage(name=THREAD_RENDERER, in_queue=detection_queue, out_queue=output_queue, drop_policy=renderer_policy),
     ]
-
-    logger.info(f"✅ Pipeline built — {len(stages)} stages ready")
-    return stages, output_queue # ← Returning both
+    return stages, output_queue

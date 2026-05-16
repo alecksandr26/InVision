@@ -75,7 +75,7 @@ include_dirs = [
     "/usr/include/ydlidar",
 ]
 library_dirs        = ["/usr/local/lib", "/usr/lib"]
-libraries           = ["ydlidar_invision", "pthread"]
+libraries          = ["ydlidar_sdk", "pthread"]
 extra_compile_args  = ["-std=c++17", "-O3", "-Wall"]
 extra_link_args     = ["-Wl,-rpath,/usr/local/lib"]
 
@@ -84,6 +84,10 @@ extra_link_args     = ["-Wl,-rpath,/usr/local/lib"]
 if is_pi:
     # Raspberry Pi 4 / 5  (armv8.2)
     extra_compile_args += ["-march=armv8.2-a+dotprod"]
+
+    # ADD THIS LINE to force g++ to link your static library into the shared module
+    extra_link_args += ["-Wl,--allow-shlib-undefined"]
+    
     print("[setup.py] Target: Raspberry Pi (aarch64)")
 
 elif is_mac:

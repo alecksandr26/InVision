@@ -25,7 +25,7 @@ Every complete scan atomically replaces the buffer and wakes any waiting callers
 git clone https://github.com/YDLIDAR/YDLidar-SDK.git
 cd YDLidar-SDK
 mkdir build && cd build
-cmake ..
+cmake -DBUILD_SHARED_LIBS=ON ..
 make -j$(nproc)
 sudo make install
 ```
