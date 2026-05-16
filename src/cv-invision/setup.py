@@ -104,21 +104,25 @@ setup(
     version="1.0.0",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
+    python_requires=">=3.11",
     install_requires=[
-        "numpy>=1.23.0,<2",
-        "opencv-python-headless", # Use headless to avoid binary conflicts
-        "pillow>=9.0.0",
-        "tensorflow>=2.15.0,<2.18",
+        "numpy>=2.0.0",                      # 3.13 requires numpy 2.x
+        "opencv-python-headless>=4.9.0",     # 4.9+ has 3.13 wheels
+        "pillow>=10.0.0",                    # 3.13 support from 10.x
+        "ai-edge-litert>=1.0.1",             # Google's official TFLite replacement — supports 3.13, no imp module issue
+        "flatbuffers>=24.3.25",              # Fix for removed imp module in 3.13
+        "torch>=2.3.0",                      # For GPU path + ultralytics
+        "torchvision>=0.18.0",
         "deep-sort-realtime>=1.3.2",
-        "ultralytics>=8.0.0",
-        "pandas>=1.5.0",
-        "matplotlib>=3.5.0",
+        "ultralytics>=8.2.0",                # 3.13 compatible
+        "pandas>=2.2.0",                     # 3.13 support from 2.2
+        "matplotlib>=3.9.0",                 # 3.13 support from 3.9
         "pyyaml>=6.0",
-        "tqdm>=4.64.0",
-        "gdown>=4.6.0",
+        "tqdm>=4.66.0",
+        "gdown>=5.0.0",
+        "picamera2>=0.3.21; platform_machine in 'armv7l aarch64'",  # Pi only
     ],
     ext_modules=[ext_module],
-    # MERGED CMDCLASS: Keeps your build_ext and adds the validators
     cmdclass={
         "build_ext": build_ext,
         "install": PostInstallCommand,

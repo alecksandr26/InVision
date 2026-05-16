@@ -126,7 +126,9 @@ class TFLiteInferenceModel:
 
 
     def _init_fallback(self, model_path, num_threads, conf_thres, iou_thres):
-        from tensorflow import lite as tflite
+        # from tensorflow import lite as tflite
+        from ai_edge_litert import interpreter as tflite
+
         logger.info(f"🔧 Forced using tensorflow.lite backend (x86/ARM)")
         logger.info(f"🧵 Initializing TFLite interpreter with {num_threads} threads")
         
