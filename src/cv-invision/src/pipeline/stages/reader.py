@@ -1,6 +1,6 @@
-from src.pipeline.stages.base    import BaseStage
-from src.pipeline.sources        import BaseSource
-from src.utils.log               import get_logger
+from cv_invision.pipeline.stages.base    import BaseStage
+from cv_invision.pipeline.sources        import BaseSource
+from cv_invision.utils.log               import get_logger
 import queue
 import time
 
@@ -60,7 +60,13 @@ class ReaderStage(BaseStage):
                 timestamp = time.time(),
             )
 
-            self._put(data)
+            if data is not None:
+                for callback in self._callbacks:
+                    try:
+                        callback(data)
+                    except Exception as e:
+                        logger.error(f"❌ Error in stage [{self.name}] callback: {e}")
+                self._put(data)
 
         self.source.release()
         logger.info(f"✅ Stage '{self.name}' done — {self.frame_idx} frames read")

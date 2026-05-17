@@ -1,16 +1,16 @@
 import queue
-from src.pipeline.const import (
+from cv_invision.pipeline.const import (
     QUEUE_SIZE_READER, QUEUE_SIZE_DETECTOR, QUEUE_SIZE_TRACKER,
     READER_DROP_POLICY, DETECTOR_DROP_POLICY, TRACKER_DROP_POLICY,
     THREAD_READER, THREAD_DETECTOR, THREAD_TRACKER, THREAD_RENDERER,
     DropPolicy
 )
-from src.pipeline.sources import VideoFileSource
-from src.pipeline.stages.reader   import ReaderStage
-from src.pipeline.stages.detector import DetectorStage
-from src.pipeline.stages.tracker  import TrackerStage
-from src.pipeline.stages.renderer import RendererStage
-from src.utils.log import get_logger
+from cv_invision.pipeline.sources import VideoFileSource
+from cv_invision.pipeline.stages.reader   import ReaderStage
+from cv_invision.pipeline.stages.detector import DetectorStage
+from cv_invision.pipeline.stages.tracker  import TrackerStage
+from cv_invision.pipeline.stages.renderer import RendererStage
+from cv_invision.utils.log import get_logger
 
 logger = get_logger(__name__)
 

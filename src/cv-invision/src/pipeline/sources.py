@@ -1,6 +1,6 @@
 import cv2
 from abc import ABC, abstractmethod
-from src.utils.log import get_logger
+from cv_invision.utils.log import get_logger
 
 logger = get_logger(__name__)
 
@@ -69,8 +69,11 @@ class CameraSource(BaseSource):
         return -1  
 
 
+
+import cv2
+
 class PiCameraSource(BaseSource):
-    """Reads frames natively from Raspberry Pi cameras."""
+    """Reads frames natively from Raspberry Pi cameras with true maximum FOV and soft pink colors."""
     def __init__(self):
         try:
             from picamera2 import Picamera2
@@ -78,24 +81,41 @@ class PiCameraSource(BaseSource):
             raise ImportError("picamera2 is required for PiCameraSource. Install it first.")
         
         self.picam2 = Picamera2()
-        config = self.picam2.create_video_configuration(main={"format": "RGB888", "size": (640, 480)})
+        
+        # 1. Generate standard video configuration targeting your high-res uncropped matrix
+        # Using 3280x2464 forces the hardware to capture the entire wide-angle (0,0) sensor canvas
+        config = self.picam2.create_video_configuration(
+            main={"format": "RGB888", "size": (3280, 2464)}
+        )
+        
+        # 2. Apply and kick off hardware streams
         self.picam2.configure(config)
         self.picam2.start()
-        logger.info("📷 PiCameraSource: native raspi camera initialized")
+        logger.info("📷 PiCameraSource: Native uncropped wide-angle canvas initialized (3280x2464 -> 640x640 processing pipeline)")
 
     def read(self):
         try:
+            # Captures full resolution frame straight from the ISP
             frame = self.picam2.capture_array()
-            # Convert to BGR immediately so YOLO and OpenCV downstream work flawlessly
-            frame_bgr = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-            return True, frame_bgr
+            
+            if frame is None:
+                return False, None
+            
+            # 3. Clean resize directly down to your square 640x640 resolution
+            # This completely bypasses the internal hardware crop and gives you huge FOV!
+            frame_resized = cv2.resize(frame, (640, 640), interpolation=cv2.INTER_LINEAR)
+                
+            return True, frame_resized
         except Exception as e:
             logger.error(f"PiCamera read failed: {e}")
             return False, None
 
     def release(self):
-        self.picam2.stop()
-        self.picam2.close()
+        try:
+            self.picam2.stop()
+            self.picam2.close()
+        except Exception:
+            pass
 
     @property
     def fps(self):
@@ -103,8 +123,7 @@ class PiCameraSource(BaseSource):
 
     @property
     def total_frames(self):
-        return -1
-
+        return -1    
 
 class StreamSource(BaseSource):
     def __init__(self, url: str):

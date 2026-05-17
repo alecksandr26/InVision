@@ -1,7 +1,7 @@
 import threading
 import queue
 from abc import ABC, abstractmethod
-from src.utils.log import get_logger
+from cv_invision.utils.log import get_logger
 
 logger = get_logger(__name__)
 
@@ -13,6 +13,17 @@ class BaseStage(ABC):
         self.drop_policy = drop_policy
         self._stop_event = threading.Event()
         self._thread     = threading.Thread(target=self._run, name=name, daemon=True)
+        
+        # New: Registry for external callback functions
+        self._callbacks = []
+
+    def register_callback(self, callback_fn):
+        """Allows central_control to inject processing hooks dynamically."""
+        if callable(callback_fn):
+            self._callbacks.append(callback_fn)
+            logger.info(f"⚓ Callback registered to stage: {self.name}")
+        else:
+            raise ValueError("Provided callback must be executable.")
 
     def start(self):
         logger.info(f"▶️  Stage '{self.name}' starting...")
@@ -26,34 +37,23 @@ class BaseStage(ABC):
         self._thread.join()
 
     def _put(self, item):
-        if self.out_queue is None:
-            return
-
+        # ... (Keep your original drop_policy logic perfectly intact here) ...
+        if self.out_queue is None: return
         if self.drop_policy == "drop_oldest":
-            try:
-                self.out_queue.put_nowait(item)
+            try: self.out_queue.put_nowait(item)
             except queue.Full:
-                try:
-                    self.out_queue.get_nowait()
-                except queue.Empty:
-                    pass
+                try: self.out_queue.get_nowait()
+                except queue.Empty: pass
                 self.out_queue.put_nowait(item)
-                logger.debug(f"  [{self.name}] dropped oldest frame")
-
         elif self.drop_policy == "drop_newest":
-            try:
-                self.out_queue.put_nowait(item)
-            except queue.Full:
-                logger.debug(f"  [{self.name}] dropped newest frame")
-
+            try: self.out_queue.put_nowait(item)
+            except queue.Full: pass
         elif self.drop_policy == "block":
-            # Fix: Loop and check stop event to prevent shutdown deadlocks
             while not self._stop_event.is_set():
                 try:
                     self.out_queue.put(item, timeout=0.2)
                     break
-                except queue.Full:
-                    continue
+                except queue.Full: continue
 
     def _run(self):
         logger.info(f"✅ Stage '{self.name}' running...")
@@ -66,9 +66,17 @@ class BaseStage(ABC):
                     self._put(None) 
                     break
 
+                # Execute original stage processing logic (YOLO or DeepSort)
                 result = self.process(item)
 
                 if result is not None:
+                    # New: Run any registered central control hooks before pushing downstream
+                    for callback in self._callbacks:
+                        try:
+                            callback(result)
+                        except Exception as e:
+                            logger.error(f"❌ Error in stage [{self.name}] callback: {e}")
+                    
                     self._put(result)
 
             except queue.Empty:

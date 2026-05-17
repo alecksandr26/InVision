@@ -63,129 +63,46 @@ static ScanResult make_result(Scan scan) {
 //  Module definition
 // ─────────────────────────────────────────────────────────────────────────────
 PYBIND11_MODULE(lidar_invision, m) {
-  m.doc() = "YDLIDAR rolling-buffer Python bindings";
+    m.doc() = "YDLIDAR rolling-buffer Python bindings (pybind11)";
 
-  // ── ScanResult ────────────────────────────────────────────────────────
-  py::class_<ScanResult>(m, "ScanResult")
-    .def_readonly("points",       &ScanResult::points,
-		  "numpy float32 array, shape (N, 3): [angle_deg, dist_cm, intensity]")
-    .def_readonly("timestamp_ns", &ScanResult::timestamp_ns,
-		  "Monotonic timestamp (nanoseconds) when the scan completed")
-    .def_readonly("scan_index",   &ScanResult::scan_index,
-		  "Monotonically increasing scan counter since start()")
-    .def_readonly("age_ms",       &ScanResult::age_ms,
-		  "Age of this scan in milliseconds at the moment fetch_scan() returned")
-    .def("__repr__", [](const ScanResult& r) {
-      return "<ScanResult points=" + std::to_string(r.points.shape(0)) +
-	" age_ms=" + std::to_string(r.age_ms) +
-	" index=" + std::to_string(r.scan_index) + ">";
-    });
+    // 1. Bind Config Structure
+    py::class_<Config>(m, "Config")
+        .def(py::init<>())
+        .def_readwrite("port",        &Config::port)
+        .def_readwrite("baudrate",    &Config::baudrate)
+        .def_readwrite("frequency",   &Config::frequency)
+        .def_readwrite("min_angle",   &Config::min_angle)
+        .def_readwrite("max_angle",   &Config::max_angle)
+        .def_readwrite("min_dist_cm", &Config::min_dist_cm)
+        .def_readwrite("max_dist_cm", &Config::max_dist_cm);
 
-  // ── Config ────────────────────────────────────────────────────────────
-  py::class_<Config>(m, "Config")
-    .def(py::init<>())
-    .def_readwrite("port",           &Config::port)
-    .def_readwrite("baudrate",       &Config::baudrate)
-    .def_readwrite("frequency",      &Config::frequency)
-    .def_readwrite("min_angle",      &Config::min_angle)
-    .def_readwrite("max_angle",      &Config::max_angle)
-    .def_readwrite("min_dist_cm",    &Config::min_dist_cm)
-    .def_readwrite("max_dist_cm",    &Config::max_dist_cm)
-    .def_readwrite("intensity",      &Config::intensity)
-    .def_readwrite("auto_reconnect", &Config::auto_reconnect)
-    .def("__repr__", [](const Config& c) {
-      return "<Config port='" + c.port +
-	"' freq=" + std::to_string(c.frequency) + "Hz>";
-    });
+    // 2. Bind the correct C++ ScanResult data context (Fixes age_ms mismatch)
+    py::class_<ScanResult>(m, "ScanResult")
+        .def_readwrite("points",       &ScanResult::points)
+        .def_readwrite("timestamp_ns", &ScanResult::timestamp_ns)
+        .def_readwrite("scan_index",   &ScanResult::scan_index)
+        .def_readwrite("age_ms",       &ScanResult::age_ms);
 
-  // ── LidarManager ─────────────────────────────────────────────────────
-  py::class_<LidarManager>(m, "LidarManager")
-    .def(py::init<>())
-
-    // ── Configuration ──────────────────────────────────────────────
-    .def("configure", &LidarManager::configure, py::arg("config"),
-	 "Apply a Config object. Must be called before start().")
-
-    .def("set_port", &LidarManager::set_port, py::arg("port"),
-	 "Set serial port, e.g. '/dev/ttyUSB0'")
-    .def("set_baudrate", &LidarManager::set_baudrate, py::arg("baudrate"))
-    .def("set_frequency", &LidarManager::set_frequency, py::arg("hz"),
-	 "Scan frequency in Hz (default 10.0)")
-    .def("set_angle_range", &LidarManager::set_angle_range,
-	 py::arg("min_deg"), py::arg("max_deg"),
-	 "Filter points outside this angular window (degrees)")
-    .def("set_distance_range", &LidarManager::set_distance_range,
-	 py::arg("min_cm"), py::arg("max_cm"),
-	 "Filter points outside this distance range (centimetres)")
-
-    // ── Lifecycle ──────────────────────────────────────────────────
-    .def("start", [](LidarManager& self) {
-      // Release the GIL: start() spawns a thread and returns quickly,
-      // but the OS thread creation can briefly block.
-      py::gil_scoped_release release;
-      self.start();
-    }, "Start the background LiDAR thread. Idempotent.")
-
-    .def("stop", [](LidarManager& self) {
-      py::gil_scoped_release release;
-      self.stop();
-    }, "Stop the background thread and disconnect the LiDAR. Idempotent.")
-
-    .def_property_readonly("is_running",  &LidarManager::is_running)
-    .def_property_readonly("has_error",   &LidarManager::has_error)
-    .def_property_readonly("last_error",  &LidarManager::last_error)
-    .def_property_readonly("scan_count",  &LidarManager::scan_count,
-			   "Total complete scans received since start()")
-    .def_property_readonly("scan_age_ms", &LidarManager::scan_age_ms,
-			   "Age of the most recent scan in milliseconds (-1 if no scan yet)")
-    .def_property_readonly("config",      &LidarManager::config)
-
-    // ── Core fetch — THE key method ────────────────────────────────
-    .def("fetch_scan",
-	 [](LidarManager& self, bool wait_for_fresh, int timeout_ms) {
-	   Scan scan;
-	   {
-	     // Release GIL only on the blocking path.
-	     // The fast path (wait_for_fresh=False) still briefly
-	     // releases because the mutex acquisition is lock-based
-	     // and we never want to hold the GIL while holding a
-	     // C++ mutex.
-	     py::gil_scoped_release release;
-	     scan = self.fetch_scan(wait_for_fresh, timeout_ms);
-	   }
-	   return make_result(std::move(scan));
-	 },
-	 py::arg("wait_for_fresh") = false,
-	 py::arg("timeout_ms")     = 150,
-	 R"doc(
-Fetch the most recent complete LiDAR scan.
-
-Parameters
-----------
-wait_for_fresh : bool
-    If False (default): return immediately with whatever is in the buffer.
-    This is the recommended mode for AI pipelines — call it right after
-    grabbing a camera frame and it costs < 100 µs.
-
-    If True: block until a scan that started *after* this call began is
-    available.  Use when you need the scan to be temporally aligned with
-    the current frame rather than the previous one.
-
-timeout_ms : int
-    Maximum wait time in milliseconds when wait_for_fresh=True.
-    If the timeout expires the last known scan is returned anyway.
-
-Returns
--------
-ScanResult
-    .points      — numpy float32 (N, 3): [angle_deg, dist_cm, intensity]
-    .timestamp_ns — when the scan was captured (steady_clock nanoseconds)
-    .scan_index  — monotonic counter
-    .age_ms      — staleness in milliseconds at the moment of return
-)doc")
-
-    .def("__repr__", [](const LidarManager& self) {
-      return std::string("<LidarManager running=") +
-	(self.is_running() ? "True" : "False") + ">";
-    });
+    // 3. Bind Main LidarManager Class
+    py::class_<LidarManager>(m, "LidarManager")
+        .def(py::init<>())
+        // Explicit lambda captures configuration values cleanly without slicing
+        .def("configure", [](LidarManager& self, const Config& cfg) {
+            self.configure(cfg);
+        }, py::arg("cfg"), "Apply setup configuration struct")
+        .def("start",     &LidarManager::start,     "Start background telemetry scanning thread")
+        .def("stop",      &LidarManager::stop,      "Stop telemetry processing thread")
+        .def_property_readonly("is_running", &LidarManager::is_running)
+        .def_property_readonly("has_error",  &LidarManager::has_error)
+        .def_property_readonly("last_error", &LidarManager::last_error)
+        .def_property_readonly("scan_count", &LidarManager::scan_count)
+        .def("fetch_scan", [](LidarManager& self, bool wait_for_fresh, int timeout_ms) {
+            Scan scan;
+            {
+                py::gil_scoped_release release;
+                scan = self.fetch_scan(wait_for_fresh, timeout_ms);
+            }
+            // Transform the raw Scan into the bounded ScanResult structure
+            return make_result(std::move(scan));
+        }, py::arg("wait_for_fresh") = false, py::arg("timeout_ms") = 150);
 }

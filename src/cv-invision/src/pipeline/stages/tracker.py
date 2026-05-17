@@ -1,5 +1,5 @@
-from src.pipeline.stages.base import BaseStage
-from src.utils.log            import get_logger
+from cv_invision.pipeline.stages.base import BaseStage
+from cv_invision.utils.log            import get_logger
 
 logger = get_logger(__name__)
 

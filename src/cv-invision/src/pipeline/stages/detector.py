@@ -1,7 +1,7 @@
 import numpy as np
-from src.pipeline.stages.base import BaseStage
-from src.model.const          import TRACKER_MIN_CONF
-from src.utils.log            import get_logger
+from cv_invision.pipeline.stages.base import BaseStage
+from cv_invision.model.const          import TRACKER_MIN_CONF
+from cv_invision.utils.log            import get_logger
 
 logger = get_logger(__name__)
 

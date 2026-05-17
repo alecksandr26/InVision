@@ -16,7 +16,7 @@ def run_invision_validation():
         
         cmd = [
             sys.executable, "-c", 
-            "from src.model.cpp_inference import preprocess; print('Check 1/2: Module Import Success')"
+            "from cv_invision.model.cpp_inference import preprocess; print('Check 1/2: Module Import Success')"
         ]
         
         env = os.environ.copy()
@@ -85,7 +85,7 @@ else:
 
 # 4. Define Extension
 ext_module = Pybind11Extension(
-    "model.cpp_inference",
+    "cv_invision.model.cpp_inference",
     [
         "src/model/cpp_inference/binding.cpp",
         "src/model/cpp_inference/postprocess.cpp",
@@ -102,8 +102,8 @@ ext_module = Pybind11Extension(
 setup(
     name="cv_invision",
     version="1.0.0",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    package_dir={"cv_invision": "src"},
+    packages=["cv_invision", "cv_invision.model", "cv_invision.pipeline"],
     python_requires=">=3.11",
     install_requires=[
         "numpy>=2.0.0",                      # 3.13 requires numpy 2.x
