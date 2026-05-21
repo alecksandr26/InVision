@@ -13,6 +13,7 @@ setup(
         # Refers to system installation requirements
         "numpy>=2.0.0",
         "opencv-python-headless>=4.9.0",
+        "pyserial>=3.5",  # Added for hardware UART communication between boards
     ],
     entry_points={
         "console_scripts": [

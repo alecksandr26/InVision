@@ -84,3 +84,46 @@ def build_detection_pipeline(source, model):
         RendererStage(name=THREAD_RENDERER, in_queue=detection_queue, out_queue=output_queue, drop_policy=renderer_policy),
     ]
     return stages, output_queue
+
+def build_headless_pipeline(source, model, tracker):
+    """
+    🏭 Builds a high-performance headless tracking pipeline without RendererStage.
+    The final output queue connects directly to the TrackerStage output buffer.
+    """
+    logger.info("⚡ Building Headless Pipeline (No UI/Renderer)...")
+
+    if isinstance(source, VideoFileSource):
+        reader_policy = DropPolicy.BLOCK
+    else:
+        reader_policy = DropPolicy.DROP_OLDEST
+
+    # Instantiate queues up to the Tracker stage
+    frame_queue     = queue.Queue(maxsize=QUEUE_SIZE_READER)
+    detection_queue = queue.Queue(maxsize=QUEUE_SIZE_DETECTOR)
+    output_queue    = queue.Queue(maxsize=QUEUE_SIZE_TRACKER)  # Straight from tracker to your loop
+
+    stages = [
+        ReaderStage(
+            name        = THREAD_READER,
+            source      = source,
+            out_queue   = frame_queue,
+            drop_policy = reader_policy,
+        ),
+        DetectorStage(
+            name        = THREAD_DETECTOR,
+            model       = model,
+            in_queue    = frame_queue,
+            out_queue   = detection_queue,
+            drop_policy = DETECTOR_DROP_POLICY,
+        ),
+        TrackerStage(
+            name        = THREAD_TRACKER,
+            tracker     = tracker,
+            in_queue    = detection_queue,
+            out_queue   = output_queue,
+            drop_policy = TRACKER_DROP_POLICY,
+        ),
+    ]
+
+    logger.info(f"✅ Headless Pipeline built — {len(stages)} stages ready (Renderer Bypassed)")
+    return stages, output_queue
